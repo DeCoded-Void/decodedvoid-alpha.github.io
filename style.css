@@ -1,4 +1,9 @@
-
+@media only screen and (max-width: 721px) {
+	html{
+		background: none;
+		background-color: #592559;
+	}
+}
 
 header {
   background: #8e3c8e;
