@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 
-<head>
-	<title>
-	DeCoded_Void - Contact Me
-	</title>
+<header>
+	<meta charset="utf-8">
+
+	<title>DeCoded_Void - Contact Me</title>
 	
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  
   	<style type="text/css">
 		html {
 			background: url("../resources/background.png") no-repeat center center fixed; 
@@ -14,20 +16,24 @@
 			-o-background-size: cover;
 			background-size: cover;
 		}
-  	</style>
-  	
-	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="../style.css" />
-	
-</head>
+		a { 
+			color: #99CCFF; 
+		}
+		@media screen and (max-width: 1081px) {
+			.geo_art{
+				width:35%;
+			}
+		}
+	</style>
 
-<header>
-	<img src="../resources/logo.png" alt="logo" height="30" onclick="window.location.href='http://www.decodedvoid.com'" class="logo">
-       <ul class="topnav">
-	   <li class="right"><a href="../pages/contactme.html">Contact Me</a></li>
-       <li class="right"><a href="../pages/about.html">About</a></li>   
-	   <li class="right"><a href="../pages/goodies.html">Goodies</a></li>
-       </ul>
+	<link rel="stylesheet" href="../style.css">
+	
+	<ul class="navbar">
+		<li class="left"><a class="mylogo"><img src="../resources/logo.png" alt="VOID" height="20" class="logo" onclick="window.location.href='http://www.decodedvoid.com'"></a></li>
+		<li class="right"><a href="../pages/contactme.html">Contact Me</a></li>
+		<li class="right"><a href="../pages/about.html">About</a></li>   
+		<li class="right"><a href="../pages/goodies.html">Goodies</a></li>
+	</ul>
 </header>
 
 <body>
@@ -60,7 +66,7 @@
 	</h3>
 	
 	<p style="text-align:center;">
-	<img src="../resources/contactme/spinner.gif" height="500">
+		<img class="geo_art" src="../resources/contactme/spinner.gif" width="15%">
 	</p>
 </body>
 

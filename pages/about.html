@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 
-<head>
-	<title>
-	DeCoded_Void
-	</title>
+<header>
+	<meta charset="utf-8">
+
+	<title>DeCoded_Void - About</title>
 	
-	<style type="text/css">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  
+  	<style type="text/css">
 		html {
 			background: url("../resources/about/banner.png") center center fixed; 
 			-webkit-background-size: cover;
@@ -14,74 +16,59 @@
 			-o-background-size: cover;
 			background-size: cover;
 		}
-		
-		.row {
-			top: 25%;
-			position: absolute;
+		.container {
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+			margin-right: auto;
+			width: 96%;
 		}
-		
-		.column {
-			left: 33%;
+		.voidhat {
+			float: left;
+			width: 36%;
 		}
-		
-		.column2 {
+		.content {
 			float: right;
 			width: 60%;
-			padding: 10px;
 		}
-		
-		.logogif {
-			width: 30%;
-			margin: 0;
-			position: absolute;
-			top: 50%;
-			left: 20%;
-			margin-right: -50%;
-			transform: translate(-50%, -50%);
-		}
-		
-		@media only screen and (max-width: 1080px) and (min-height: 721px){
-			.logogif {
-				width: 290px;
-				top: 3%;
-				left: 49%;
-				transform: translate(-50%, -50%);
+
+		@media screen and (max-width: 1081px) {
+			.container {
+				display: block;
+				width: 100%;
 			}
-			.column {
-				left: 0%;
+			.voidhat {
+				width: 100%;
 			}
-			.column2 {
-				margin-top: 100px;
+			.content {
 				float: none;
-				width: 97%;
-				padding: 10px;
+				width: 100%;
 			}
-
-			
+			.voidlogo{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+			}
 		}
+	</style>
 
-    </style>
+	<link rel="stylesheet" href="../style.css">
 	
-	<link rel="stylesheet" href="../style.css" />
-	
-</head>
-
-<header>
-	<img src="../resources/logo.png" alt="logo" height="30" onclick="window.location.href='http://www.decodedvoid.com'" class="logo">
-       <ul class="topnav">
-	   <li class="right"><a href="../pages/contactme.html">Contact Me</a></li>
-       <li class="right"><a href="../pages/about.html">About</a></li>   
-	   <li class="right"><a href="../pages/goodies.html">Goodies</a></li>
-       </ul>
+	<ul class="navbar">
+		<li class="left"><a class="mylogo"><img src="../resources/logo.png" alt="VOID" height="20" class="logo" onclick="window.location.href='http://www.decodedvoid.com'"></a></li>
+		<li class="right"><a href="../pages/contactme.html">Contact Me</a></li>
+		<li class="right"><a href="../pages/about.html">About</a></li>   
+		<li class="right"><a href="../pages/goodies.html">Goodies</a></li>
+	</ul>
 </header>
 
 <body>
-	<div class="row">
-		<div class = "column">
-		<img src="../resources/about/void.gif" align="left" class="logogif">
-	</div>
-	
-		<div class = "column2">
+	<div class="container">
+		<div class="voidhat">
+			<img class="voidlogo" src="../resources/about/void.gif" width="100%">
+		</div>
+		<div class="content">
 			<h1>
 				About Me
 			</h1>

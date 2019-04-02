@@ -1,5 +1,45 @@
-@media only screen and (max-width: 1081px) and (min-height: 721px){
-	iframe {
+/* Navbar */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8e3c8e;
+}
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+ul.navbar li a:hover:not(.mylogo) {
+	background-color: #000001;
+	}
+ul.navbar li {
+	float: left;
+	}
+ul.navbar li.right {
+	float: right;
+	}
+ul.navbar li.left {
+	/* Fix for logo */
+	max-height: 68px;
+	}
+
+/* Mobile Version */
+@media screen and (max-width: 1081px) {
+	ul.navbar li.right,
+	ul.navbar li {
+		float: none;
+	}
+	.logo {
+		height: 45px;
+	}
+	ul.navbar li.left{
+		max-height: none;
+	}
+  	iframe {
 		width: 100%
 	}
 	html{
@@ -8,47 +48,7 @@
 	}
 }
 
-header {
-  background: #8e3c8e;
-}
-
-.logo {
-  float: left;
-  padding: 20px 15px;
-}
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #8e3c8e;
-}
-
-ul.topnav li {
-	float: left;
-}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 25px 15px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {
-	background-color: #111;
-}
-
-ul.topnav li a.active {
-	background-color: #4CAF50;
-}
-
-ul.topnav li.right {
-	float: right;
-}
-
+/* Body & Text */
 body {
 	font-family:"Arial"; 
 	font-weight:600; 
@@ -60,7 +60,7 @@ h1{
 	-webkit-text-stroke: 2px black;
 	font-size:3em;
 	color: #ffffff;
-	margin:10
+	margin:0
 }
 h2{
 	text-align: center;
